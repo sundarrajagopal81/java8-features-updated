@@ -17,5 +17,20 @@ public class RunnableLambdaExample {
         Runnable runnable1 = ()-> System.out.println("Thread-2");
         new Thread(runnable1).start();
 
+        // Thread example BEFORE Java8
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Thread-3");
+            }
+        }).start();
+        //AFTER java8
+
+        new Thread(()->
+                {
+                    System.out.println("Thread-4");
+                    System.out.println("Thread-5");
+                }).start();
     }
 }
