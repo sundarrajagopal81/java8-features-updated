@@ -14,6 +14,7 @@ public class ConsumerExample {
         c2.accept("SUNDAR");
         //andThen is a default method from the Consumer functional interface
         //same type of consumers can be clubed together. like here is String is a common type
+        //if incase of different datatypes we cannot use the andThen mehtod.
         c1.andThen(c2).accept("Sundar Rajagopal");
         Consumer<Integer> c3 = x -> System.out.println(x + 10);
         Consumer<Integer> c4 = x -> System.out.println(x + 100);
