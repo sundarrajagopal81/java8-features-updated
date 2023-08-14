@@ -15,12 +15,10 @@ public class JavaOldVsJava8Example {
                 uniqueList.add(name);
             }
         }
-        System.out.println("BEFOR Java8: "+ uniqueList);
+        System.out.println("BEFOR Java8: " + uniqueList);
         //After java 8
         List<String> uniqueList1 = names.stream().distinct().collect(Collectors.toList());
-        System.out.println("In Java8: "+ uniqueList1);
-
-
+        System.out.println("In Java8: " + uniqueList1);
 
 
     }

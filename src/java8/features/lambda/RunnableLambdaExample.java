@@ -14,7 +14,7 @@ public class RunnableLambdaExample {
         new Thread(runnable).start();
         //AFTER JAVA8
         //() -> ()
-        Runnable runnable1 = ()-> System.out.println("Thread-2");
+        Runnable runnable1 = () -> System.out.println("Thread-2");
         new Thread(runnable1).start();
 
         // Thread example BEFORE Java8
@@ -27,10 +27,10 @@ public class RunnableLambdaExample {
         }).start();
         //AFTER java8
 
-        new Thread(()->
-                {
-                    System.out.println("Thread-4");
-                    System.out.println("Thread-5");
-                }).start();
+        new Thread(() ->
+        {
+            System.out.println("Thread-4");
+            System.out.println("Thread-5");
+        }).start();
     }
 }
