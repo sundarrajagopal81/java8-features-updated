@@ -1,4 +1,4 @@
-package src.java8.features.functionalinterface;
+package src.java8.features.functionalinterface.consumer;
 
 import src.java8.features.repo.Person;
 import src.java8.features.repo.PersonRepository;
