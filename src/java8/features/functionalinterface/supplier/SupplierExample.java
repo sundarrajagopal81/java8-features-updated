@@ -6,6 +6,17 @@ import src.java8.features.repo.PersonRepository;
 import java.util.List;
 import java.util.function.Supplier;
 
+/**
+ * Represents a supplier of results.
+ * There is no requirement that a new or distinct result be returned each time the supplier is invoked.
+ * <p>
+ * This is a functional interface whose functional method is get().
+ * <p>
+ * T get()
+ * Gets a result.
+ * Returns:
+ * a result
+ */
 public class SupplierExample {
 
     static Supplier<List<Person>> supplier1 = () -> PersonRepository.getAllPersons();

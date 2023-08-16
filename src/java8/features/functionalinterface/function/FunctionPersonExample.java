@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
+
 public class FunctionPersonExample {
     static Predicate<Person> heightPredicate = per -> per.getHeight() >= 140;
     static Predicate<Person> genderPredicate = per -> per.getGender().equals("Male");

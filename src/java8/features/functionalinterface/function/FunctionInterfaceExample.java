@@ -2,6 +2,20 @@ package src.java8.features.functionalinterface.function;
 
 import java.util.function.Function;
 
+/**
+ * /**
+ * * public interface Function<T,R>
+ * * Represents a function that accepts one argument and produces a result.
+ * * This is a functional interface whose functional method is apply(Object).
+ * *
+ * * R apply(T t)
+ * * Applies this function to the given argument.
+ * * Parameters:
+ * * t - the function argument
+ * * Returns:
+ * * the function result
+ */
+
 public class FunctionInterfaceExample {
 
     static Function<String, Integer> f1 = s -> s.length();
