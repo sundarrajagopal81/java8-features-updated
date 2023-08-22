@@ -1,4 +1,4 @@
-package src.java8.features.streams;
+package src.java8.features.streams.factorymethods;
 
 import src.java8.features.repo.Person;
 import src.java8.features.repo.PersonRepository;

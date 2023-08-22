@@ -1,4 +1,4 @@
-package src.java8.features.streams;
+package src.java8.features.streams.factorymethods;
 
 import java.util.stream.Stream;
 

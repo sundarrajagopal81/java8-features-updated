@@ -1,4 +1,4 @@
-package src.java8.features.streams;
+package src.java8.features.streams.factorymethods;
 
 import java.util.Random;
 import java.util.function.Supplier;
@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class StreamFactoryMethodExample {
     static UnaryOperator<Integer> uo = x -> x + 5;
-    static Supplier<Double> supp = Math::random; // () -> Random
+    static Supplier<Double> supp = Math::random; // () -> Math.Random
 
     public static void main(String[] args) {
 
