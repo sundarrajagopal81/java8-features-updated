@@ -3,7 +3,6 @@ package src.java8.features.defaultmethods;
 import src.java8.features.repo.Person;
 import src.java8.features.repo.PersonRepository;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
