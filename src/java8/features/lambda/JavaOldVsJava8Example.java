@@ -17,6 +17,9 @@ public class JavaOldVsJava8Example {
         }
         System.out.println("BEFOR Java8: " + uniqueList);
         //After java 8
+
+        List<String> listStr2 = names.stream().filter(ch -> ch.startsWith("M")).collect(Collectors.toList());
+        System.out.println(listStr2);
         List<String> uniqueList1 = names.stream().distinct().collect(Collectors.toList());
         System.out.println("In Java8: " + uniqueList1);
 

@@ -19,5 +19,9 @@ public class PredicateExample {
         Predicate<Integer> equal = p -> p == 50;
         boolean result = lessthan.and(equal).test(50);
         System.out.println(result);
+
+        System.out.println(lessthan.or(equal).test(50));
+        System.out.println();
+
     }
 }
